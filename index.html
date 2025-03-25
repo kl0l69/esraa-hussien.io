@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع إسراء حسين - معالجة نفسية تقدم خدمات العلاج السلوكي المعرفي، إدارة الاكتئاب والقلق، دعم الصحة العقلية للأطفال والمراهقين، والإرشاد الأسري. تواصلوا الآن!">
+    <meta name="keywords" content="علاج نفسي, إسراء حسين, العلاج السلوكي المعرفي, الاكتئاب, القلق, الصحة العقلية, إرشاد أسري, دعم الأطفال والمراهقين">
+    <meta name="author" content="إسراء حسين | تم تطويره بواسطة A R S I N E K">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#A78BFA">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PSY Esraa - معالجة نفسية">
+    <meta property="og:description" content="خدمات علاج نفسي مع إسراء حسين تشمل العلاج السلوكي المعرفي، إدارة الاكتئاب والقلق، ودعم الصحة العقلية. تواصلوا الآن!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kl0l69.github.io/esraa-hussien">
+    <meta property="og:image" content="https://kl0l69.github.io/esraa-hussien/assets/preview-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PSY Esraa - معالجة نفسية">
+    <meta name="twitter:description" content="خدمات علاج نفسي مع إسراء حسين تشمل العلاج السلوكي المعرفي، إدارة الاكتئاب والقلق، ودعم الصحة العقلية. تواصلوا الآن!">
+    <meta name="twitter:image" content="https://kl0l69.github.io/esraa-hussien/assets/preview-image.jpg">
+
+    <title>PSY Esraa</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <div class="ripple-container"></div>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">إسراء حسين</div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#testimonials">آراء العملاء</a></li>
+            <li class="contact-link"><a href="#contact">تواصل</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#testimonials">آراء العملاء</a></li>
+            <li><a href="#contact">تواصل معي</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 class="typing-text glowing-text">اهــلا بك | welcome | （︶_︶）</h3>
+            <h1 class="typing-text glowing-text">Psy Esraa  :(</h1>
+            <p class="typing-text glowing-text">نفـــتــش فــي الخــبــايا، نُـداوي جــروحا لا تــرونهــا ]] .</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn primary-btn">تــواصل</a>
+                <div class="music-control">
+                    <button id="musicButton" class="music-btn" aria-label="تشغيل/إيقاف الموسيقى">
+                        <i class="fas fa-play music-icon"></i>
+                    </button>
+                    <audio id="background-music" loop>
+                        <source src="assets/audio/background-music.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio id="click-sound">
+                        <source src="assets/audio/click-sound.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="celestial-body"></div>
+        <div class="moon"></div>
+        <div class="sun"></div>
+        <canvas id="stars-canvas" class="stars-canvas"></canvas>
+        <canvas id="butterflies-canvas" class="butterflies-canvas"></canvas>
+        <canvas id="particles-canvas" class="particles-canvas"></canvas>
+        <div class="glow-particles"></div>
+        <div class="mouse-trail"></div>
+        <div class="falling-butterflies"></div>
+        <svg class="butterfly-svg" viewBox="0 0 200 200">
+            <path class="wing left-wing" d="M100 75 C 60 45, 20 85, 40 115 C 60 145, 90 125, 100 100 C 90 85, 80 65, 100 75 Z" fill="#FFAB40" fill-opacity="0.7" stroke="#FFCA28" stroke-width="2">
+                <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M100 75 C 60 45, 20 85, 40 115 C 60 145, 90 125, 100 100 C 90 85, 80 65, 100 75 Z; M100 75 C 65 50, 25 90, 45 120 C 65 150, 95 130, 100 100 C 95 90, 85 70, 100 75 Z; M100 75 C 60 45, 20 85, 40 115 C 60 145, 90 125, 100 100 C 90 85, 80 65, 100 75 Z"/>
+            </path>
+            <path class="wing right-wing" d="M100 75 C 140 45, 180 85, 160 115 C 140 145, 110 125, 100 100 C 110 85, 120 65, 100 75 Z" fill="#FFAB40" fill-opacity="0.7" stroke="#FFCA28" stroke-width="2">
+                <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M100 75 C 140 45, 180 85, 160 115 C 140 145, 110 125, 100 100 C 110 85, 120 65, 100 75 Z; M100 75 C 135 50, 175 90, 155 120 C 135 150, 105 130, 100 100 C 105 90, 115 70, 100 75 Z; M100 75 C 140 45, 180 85, 160 115 C 140 145, 110 125, 100 100 C 110 85, 120 65, 100 75 Z"/>
+            </path>
+            <path class="body" d="M100 65 C 95 75, 95 85, 100 100 C 105 85, 105 75, 100 65 Z" fill="#FFCA28" stroke="none"></path>
+            <path class="antenna" d="M100 65 C 95 55, 85 45, 75 40" fill="none" stroke="#FFCA28" stroke-width="1"/>
+            <path class="antenna" d="M100 65 C 105 55, 115 45, 125 40" fill="none" stroke="#FFCA28" stroke-width="1"/>
+        </svg>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services fade-in-section">
+        <h2>خدماتي</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="glow-effect"></div>
+                <i class="fas fa-brain service-icon"></i>
+                <h3>العلاج السلوكي المعرفي</h3>
+                <p>جلسات مخصصة لتغيير الأنماط السلبية في التفكير والسلوك لتحسين الصحة العقلية.</p>
+            </div>
+            <div class="service-card">
+                <div class="glow-effect"></div>
+                <i class="fas fa-heart service-icon"></i>
+                <h3>إدارة الاكتئاب والقلق</h3>
+                <p>تقنيات فعالة للتعامل مع الاكتئاب والقلق وتحسين جودة الحياة.</p>
+            </div>
+            <div class="service-card">
+                <div class="glow-effect"></div>
+                <i class="fas fa-child service-icon"></i>
+                <h3>دعم الصحة العقلية للأطفال والمراهقين</h3>
+                <p>مساندة نفسية للأطفال والمراهقين للتغلب على التحديات العاطفية والسلوكية.</p>
+            </div>
+            <div class="service-card">
+                <div class="glow-effect"></div>
+                <i class="fas fa-users service-icon"></i>
+                <h3>الإرشاد الأسري</h3>
+                <p>دعم الأسر لتحسين التواصل وحل النزاعات بطرق صحية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about fade-in-section">
+        <h2>عني</h2>
+        <div class="about-content">
+            <div class="paper-stack">
+                <div class="paper paper-1">
+                    <h2><span class="highlight-text">أنـــــــا</span></h2>
+                    <p>إسراء حسين - معالجة نفسية</p>
+                </div>
+                <div class="paper paper-2">
+                    <p>ليسانس دراسات إنسانية - قسم علم النفس - جامعة الأزهر</p>
+                </div>
+                <div class="paper paper-3">
+                    <p>دبلوم إكلينيكي وإرشاد نفسي</p>
+                </div>
+                <div class="paper paper-4">
+                    <p>باحثة ماجستير</p>
+                </div>
+            </div>
+        </div>
+        <svg class="book-svg" viewBox="0 0 200 100">
+            <path class="book-path" d="M20 85 Q50 45 100 85 T180 85" stroke="#FFCA28" stroke-width="2" fill="none"/>
+            <path class="book-path" d="M30 80 Q50 40 100 80 T170 80" stroke="#FFCA28" stroke-width="2" fill="none"/>
+            <g class="book-sparks">
+                <circle cx="100" cy="50" r="2" fill="#FFCA28" opacity="0"/>
+                <circle cx="100" cy="50" r="2" fill="#FFCA28" opacity="0"/>
+            </g>
+        </svg>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials fade-in-section">
+        <h2>آراء العملاء</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-paper">
+                <div class="avatar">
+                    <i class="fas fa-user-circle avatar-icon"></i>
+                </div>
+                <p class="testimonial-text">
+                    "الدكتورة إسراء فعلاً حاجة تانية خالص، ساعدتني أعدي أيام صعبة جدًا وأنا كنت تايه، ربنا يباركلها."
+                </p>
+                <p class="client-name">عميل مجهول</p>
+            </div>
+            <div class="testimonial-paper">
+                <div class="avatar">
+                    <i class="fas fa-user-circle avatar-icon"></i>
+                </div>
+                <p class="testimonial-text">
+                    "أنا كنت بقع في حفرة سودا من القلق، بس الجلسات مع د. إسراء خلتني أشوف النور تاني، هي دكتورة عسسسل."
+                </p>
+                <p class="client-name">عميل مجهول</p>
+            </div>
+            <div class="testimonial-paper">
+                <div class="avatar">
+                    <i class="fas fa-user-circle avatar-icon"></i>
+                </div>
+                <p class="testimonial-text">
+                    "د. إسراء ساعدتني أفهم ولادي أكتر وأتعامل معاهم صح، بجد أنا ممتنة جدًا ليها، ربنا يجازيها خير."
+                </p>
+                <p class="client-name">عميل مجهول</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in-section">
+        <h2>تواصل معي</h2>
+        <div class="contact-container">
+            <div class="contact-card specialist-card">
+                <h3>يمكنك التواصل هنا</h3>
+                <p>_____________________</p>
+                <div class="social-links">
+                    <a href="https://wa.me/+201156967558" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61572763863199" target="_blank" rel="noopener noreferrer" class="facebook-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card developer-card">
+                <h3>للتحدث مع المطور</h3>
+                <p>ـــــــــــــــــ</p>
+                <div class="social-links">
+                    <a href="https://wa.me/+201141345223" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:ayrn194@gmail.com" target="_blank" rel="noopener noreferrer" class="email-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.facebook.com/nq703" target="_blank" rel="noopener noreferrer" class="facebook-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://t.me/nllo7" target="_blank" rel="noopener noreferrer" class="telegram-link">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-butterflies"></div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-btn"><i class="fas fa-comment"></i></div>
+    <div class="chatbot-window">
+        <div class="chatbot-content">
+            <p>مرحبًا! كيف يمكنني مساعدتك؟</p>
+            <button class="chatbot-question" data-question="book">حجز جلسة</button>
+            <button class="chatbot-question" data-question="services">ما الخدمات؟</button>
+            <button class="chatbot-question" data-question="contact">تواصل مع إسراء</button>
+            <div id="chatbot-response"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>تم بواسطة - شـــاب يـــدعى <br> © A R S I N E K</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
